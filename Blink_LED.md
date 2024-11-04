@@ -23,10 +23,13 @@
    - Search for "ESP8266" and install it.
 
 ### Step 2: Connect the Hardware
-1. **For NodeMCU**:
+
+![OIP (6)](https://github.com/user-attachments/assets/821000ff-be1c-4338-9c7b-e87e05fc9e89)
+
    - Connect the **long leg** (anode) of the LED to **D1** (GPIO5).
    - Connect the **short leg** (cathode) to one end of a **220-ohm resistor**.
    - Connect the other end of the resistor to **GND**.
+
 
 ### Step 3: Write the Code
 Open Arduino IDE and enter this simple code:
