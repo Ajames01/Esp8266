@@ -6,9 +6,7 @@ This README provides a comprehensive overview of the pinout for the ESP8266 micr
 ## Pinout Diagram
 
 ESP8266 Pinout
-
-
-
+![WhatsApp Image 2024-11-04 at 09 44 12_2f7a3831](https://github.com/user-attachments/assets/18751f51-5404-4153-892b-e6f4851221a5)
 
 ## Pin Functions
 
