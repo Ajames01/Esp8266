@@ -11,6 +11,7 @@ This project demonstrates how to control a seven-segment display using the ESP82
 - **Jumper Wires**
 
 ## Connect the ESP8266 to the seven-segment display as follows:
+![WhatsApp Image 2024-11-04 at 09 07 16_4bdce4fal](https://github.com/user-attachments/assets/f4164d0b-633e-4e69-b1df-83cf78ce4667)
 
 | ESP8266 Pin | Seven Segment Pin |
 |-------------|--------------------|
@@ -43,18 +44,18 @@ const int F_PIN = D1; // Segment F
 const int G_PIN = D0; // Segment G
 const int DP_PIN = D7; // Decimal Point
 
-// Array for digits 0-9
+// Array for digits 0-9 using 1 for HIGH and 0 for LOW
 const byte digits[10][8] = {
-    {HIGH, HIGH, HIGH, HIGH, HIGH, HIGH, LOW, LOW},   // 0
-    {LOW, HIGH, HIGH, LOW, LOW, LOW, LOW, LOW},       // 1
-    {HIGH, HIGH, LOW, HIGH, HIGH, LOW, HIGH, LOW},    // 2
-    {HIGH, HIGH, HIGH, HIGH, LOW, LOW, HIGH, LOW},     // 3
-    {LOW, HIGH, HIGH, LOW, LOW, HIGH, HIGH, LOW},      // 4
-    {HIGH, LOW, HIGH, HIGH, LOW, HIGH, HIGH, LOW},     // 5
-    {HIGH, LOW, HIGH, HIGH, HIGH, HIGH, HIGH, LOW},    // 6
-    {HIGH, HIGH, HIGH, LOW, LOW, LOW, LOW ,LOW},       // 7
-    {HIGH ,HIGH ,HIGH ,HIGH ,HIGH ,HIGH ,LOW ,LOW},   // 8
-    {HIGH ,HIGH ,HIGH ,LOW ,LOW ,HIGH ,HIGH ,LOW}     // 9
+    {1, 1, 1, 1, 1, 1, 0, 0},   // 0
+    {0, 1, 1, 0, 0, 0, 0, 0},   // 1
+    {1, 1, 0, 1, 1, 0, 1, 0},   // 2
+    {1, 1, 1, 1, 0, 0, 1, 0},   // 3
+    {0, 1, 1, 0, 0, 1, 1, 0},   // 4
+    {1, 0, 1, 1, 0, 1, 1, 0},   // 5
+    {1, 0, 1, 1, 1, 1, 1, 0},   // 6
+    {1, 1, 1, 0, 0, 0, 0 ,0},   // 7
+    {1 ,1 ,1 ,1 ,1 ,1 ,0 ,0},   // 8
+    {1 ,1 ,1 ,0 ,0 ,1 ,1 ,0}    // 9
 };
 
 void setup() {
